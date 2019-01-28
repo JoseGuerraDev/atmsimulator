@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATM - Simulator</title>
+    <link rel="shortcut icon" href="/images/logotipo-atm-simulator.png" type="image/x-icon">
+    <meta name="description" content="Simulador de Cajeros Automaticos Online. Aprende a sacar dinero en cajeros automaticos y realizar operaciones">
+    <meta property="og:site_name" content="ATM-Simulator" />
+    <meta property="og:image:url" content="https://joseguerraweb.github.io/atmsimulator/images/logotipo-atm-simulator.png" />
+    <meta property="og:description" content="Simulador de Cajeros Automaticos Online. Aprende a sacar dinero en cajeros automaticos y realizar operaciones" />
+    <meta property="og:title" content="ATM Simulator - Simulador Cajero Automatico Online">
+    <meta property="og:url" content="https://joseguerraweb.github.io/atmsimulator/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JoseGuerraWEB">
+    <meta name="twitter:creator" content="@JoseGuerraWEB">
+</head>
+
+<body>
+    <dialog>
+        <h2>Inserte una tarjeta por favor</h2>
+        <div>
+            <p>Tarjeta aquí</p>
+        </div>
+        <img src="/images/tarjeta-atm-simulator.svg" alt="" srcset="">
+    </dialog>
+    <section class="container">
+        <header>
+            <figure>
+                <img src="/images/logotipo-atm-simulator.png" alt="logotipo de atm-simulator" srcset="" width="250">
+            </figure>
+            <div>
+                <h1>ATM - Simulator</h1>
+                <h2>Indique la operación que desea hacer</h2>
+            </div>
+            <div class="container-buttons">
+                <a href="#" class="help"><i class="icon-ayuda"></i> Ayuda</a>
+                <a href="https://google.com" class="exit"><i class="icon-salir"></i> Salir</a>
+            </div>
+        </header>
+        <div class="operations-list">
+            <div class="operations-item">
+                <i class="icon-retirar"></i>
+                <p>Retirar 20€</p>
+                <p>(Sin comprobante)</p>
+            </div>
+            <div class="operations-item">
+                <i class="icon-movil"></i>
+                <p>Recarga 20€</p>
+                <p>(688 888 888)</p>
+            </div>
+            <div class="operations-item">
+                <i class="icon-total"></i>
+                <p>Saldo Disponible</p>
+                <p id="saldo"></p>
+            </div>
+            <div class="operations-item">
+                <i class="icon-importe"></i>
+                <p>Ingresa el importe</p>
+                <label for="importe">
+                    <input type="number" id="importe" placeholder="Importe (€)" />
+                    <input type="button" value="Retirar dinero" id="retirar" />
+                </label>
+            </div>
+            <div class="operations-item">
+                <i class="icon-ingresar"></i>
+                <p>Ingresos</p>
+            </div>
+            <div class="operations-item">
+                <i class="icon-haz-retirado"></i>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/atm.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</body>
+
+</html>
