@@ -72,6 +72,9 @@ body {
     display: grid;
     grid-template-rows: 29vh 33vh 33vh;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "branding title buttons"
+        "remove mobile balance"
+        "deposit revenue result";
     text-align: center;
     grid-gap: 7px;
     margin: 10px;
@@ -81,6 +84,7 @@ body {
 .branding {
     justify-self: center;
     margin: 0;
+    grid-area: branding;
 }
 
 .branding img {
@@ -92,6 +96,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    grid-area: title;
 }
 
 h1 {
@@ -106,6 +111,7 @@ h2 {
 
 .buttons {
     align-self: center;
+    grid-area: buttons;
 }
 
 .help {
@@ -166,14 +172,17 @@ h2 {
 
 .remove {
     background-color: #28B78D;
+    grid-area: remove;
 }
 
 .mobile {
     background-color: #28B78D;
+    grid-area: mobile;
 }
 
 .balance {
     background-color: #28B78D;
+    grid-area: balance;
 }
 
 #saldo {
@@ -184,6 +193,7 @@ h2 {
 
 .deposit {
     background-color: #243743;
+    grid-area: deposit;
 }
 
 input[type=number] {
@@ -223,10 +233,12 @@ input[type=button]:active {
 
 .revenue {
     background-color: #243743;
+    grid-area: revenue;
 }
 
 .result {
     background-color: #243743;
+    grid-area: result;
 }
 
 #resultado {
@@ -243,5 +255,95 @@ input[type=button]:active {
     input[type=button] {
         padding: 10px;
         margin: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "branding title"
+            "remove mobile"
+            "balance revenue"
+            "deposit deposit"
+            "result buttons";
+    }
+
+    .remove {
+        background-color: #243743;
+    }
+
+    .mobile {
+        background-color: #243743;
+    }
+
+    .revenue {
+        background-color: #28B78D;
+    }
+
+    .result {
+        background-color: #28B78D;
+    }
+
+    .buttons {
+        align-self: auto;
+        background-color: #28B78D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .help,
+    .exit {
+        border: 2px solid white;
+        background-color: transparent;
+        box-shadow: none;
+        color: white;
+        font-weight: 700;
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container {
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "title"
+            "remove"
+            "mobile"
+            "balance"
+            "revenue"
+            "deposit"
+            "result"
+            "buttons"
+            "branding";
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .mobile {
+        background-color: #28B78D;
+    }
+
+    .balance {
+        background-color: #243743;
+    }
+
+    .buttons {
+        flex-direction: row;
+        background-color: #243743;
     }
 }
