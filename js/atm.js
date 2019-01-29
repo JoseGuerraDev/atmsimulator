@@ -1,16 +1,16 @@
 var soundE = new Audio()
-soundE.src = '/../audio/money.mp3'
+soundE.src = '../audio/money.mp3'
 
 var imagenes = [];
-imagenes["500"] = "/../images/billete500.png"
-imagenes["200"] = "/../images/billete200.png"
-imagenes["100"] = "/../images/billete100.png"
-imagenes["50"] = "/../images/billete50.png"
-imagenes["20"] = "/../images/billete20.png"
-imagenes["10"] = "/../images/billete10.png"
-imagenes["5"] = "/../images/billete5.png"
-imagenes["2"] = "/../images/moneda2.png"
-imagenes["1"] = "/../images/moneda1.png"
+imagenes["500"] = "../images/billete500.png"
+imagenes["200"] = "../images/billete200.png"
+imagenes["100"] = "../images/billete100.png"
+imagenes["50"] = "../images/billete50.png"
+imagenes["20"] = "../images/billete20.png"
+imagenes["10"] = "../images/billete10.png"
+imagenes["5"] = "../images/billete5.png"
+imagenes["2"] = "../images/moneda2.png"
+imagenes["1"] = "../images/moneda1.png"
 
 class Money {
     constructor(v, c) {
