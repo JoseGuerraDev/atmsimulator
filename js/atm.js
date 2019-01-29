@@ -84,3 +84,14 @@ function contar() {
     }
     saldo.innerHTML = total + ' €';
 }
+
+function retirar20() {
+    if (total >= 20) {
+        total -= 20;
+        saldo.innerHTML = total + ' €';
+    }
+
+    else {
+        resultado.innerHTML += "<p>Saldo insuficiente";
+    }
+}
