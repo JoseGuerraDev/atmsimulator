@@ -52,12 +52,12 @@
             <a href="#" class="help"><i class="icon-ayuda"></i> Ayuda</a>
             <a href="https://google.com" class="exit"><i class="icon-salir"></i> Salir</a>
         </div>
-        <div class="remove item">
+        <div class="remove item" onclick="retirar20()">
             <i class="icon-retirar"></i>
             <p>Retirar 20€</p>
             <p>(Sin comprobante)</p>
         </div>
-        <div class="mobile item">
+        <div class="mobile item" onclick="retirar20()">
             <i class="icon-movil"></i>
             <p>Recarga 20€</p>
             <p>(688 888 888)</p>
@@ -72,7 +72,9 @@
             <p>Ingresa el importe</p>
             <label for="importe">
                 <input type="number" id="importe" placeholder="Importe (€)" />
-                <input type="button" value="Retirar dinero" id="retirar" />
+                <a href="#resultado">
+                    <input type="button" value="Retirar dinero" id="retirar" />
+                </a>
             </label>
         </div>
         <div class="revenue item">
