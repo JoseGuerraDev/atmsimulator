@@ -1,16 +1,16 @@
 var soundE = new Audio()
-soundE.src = '/audio/money.mp3'
+soundE.src = 'https://joseguerraweb.github.io/atmsimulator/audio/money.mp3'
 
 var imagenes = [];
-imagenes["500"] = "/images/billete500.png"
-imagenes["200"] = "/images/billete200.png"
-imagenes["100"] = "/images/billete100.png"
-imagenes["50"] = "/images/billete50.png"
-imagenes["20"] = "/images/billete20.png"
-imagenes["10"] = "/images/billete10.png"
-imagenes["5"] = "/images/billete5.png"
-imagenes["2"] = "/images/moneda2.png"
-imagenes["1"] = "/images/moneda1.png"
+imagenes["500"] = "https://joseguerraweb.github.io/atmsimulator/images/billete500.png"
+imagenes["200"] = "https://joseguerraweb.github.io/atmsimulator/images/billete200.png"
+imagenes["100"] = "https://joseguerraweb.github.io/atmsimulator/images/billete100.png"
+imagenes["50"] = "https://joseguerraweb.github.io/atmsimulator/images/billete50.png"
+imagenes["20"] = "https://joseguerraweb.github.io/atmsimulator/images/billete20.png"
+imagenes["10"] = "https://joseguerraweb.github.io/atmsimulator/images/billete10.png"
+imagenes["5"] = "https://joseguerraweb.github.io/atmsimulator/images/billete5.png"
+imagenes["2"] = "https://joseguerraweb.github.io/atmsimulator/images/moneda2.png"
+imagenes["1"] = "https://joseguerraweb.github.io/atmsimulator/images/moneda1.png"
 
 class Money {
     constructor(v, c) {
